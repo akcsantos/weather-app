@@ -1,5 +1,5 @@
 body {
-  background-image: url("./images/background-image.jpg");
+  background-image: url("../public/background-image.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -16,7 +16,13 @@ body {
   flex-direction: column;
 }
 
-input {
+.searchSection {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.searchBar {
   background: rgba(255, 255, 255, 0.27);
   min-height: 50px;
   min-width: 600px;
@@ -26,10 +32,61 @@ input {
   font-size: 1rem;
 }
 
-input:focus {
+.searchBar:focus {
   border: none;
   outline: none;
 }
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* .slider {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.round {
+  position: static;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.round:before {
+  position: static;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:checked + .round {
+  background-color: #2196f3;
+}
+
+.slider:focus + .round {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.slider:checked + .round:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+} */
 
 .middleSection {
   width: 80%;
@@ -67,6 +124,8 @@ input:focus {
 .weatherIcon {
   height: 311px;
   width: 475px;
+  border: 0;
+  outline: none;
 }
 
 .temperature-status {
@@ -102,7 +161,7 @@ input:focus {
 }
 
 .feels-like,
-.precipitation {
+.cloudiness {
 }
 
 .topPart,

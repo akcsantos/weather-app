@@ -7,24 +7,30 @@
   <script defer src="main.js"></script></head>
   <body>
     <div class="mainContainer">
+      
       <div class="searchSection">
         <input
           type="text"
           class="searchBar"
-          placeholder="Calamba City, Laguna"
+          placeholder="Calamba City"
         />
+        <label class="switch">
+          <input type="checkbox" class="slider" />
+          <span class="round"></span>
+        </label>
       </div>
+ 
       <div class="middleSection">
         <div class="leftSide">
           <div class="locationSearched">
-            <p class="location">Laguna, Philippines</p>
+            <div class="location"></div>
           </div>
           <div class="dateToday">Thursday, 23 January 2025</div>
           <div class="icon-temperature">
-            <img src="e440b43c64e26a82651e.png" class="weatherIcon" />
+            <img class="weatherIcon"></img>
             <div class="temperature-status">
-              <p class="temperature">21°C</p>
-              <p class="status">Partly Cloudy</p>
+              <div class="temperature"></div>
+              <div class="status"></div>
             </div>
           </div>
         </div>
@@ -32,58 +38,58 @@
         <div class="rightSide">
           <div class="topPart">
             <div class="feels-like">
-              <div class="details">21°C</div>
+              <div class="details" id="details-feelsLike"></div>
               <div class="text">Feels Like</div>
             </div>
-            <div class="precipitation">
-              <div class="details">0%</div>
-              <div class="text">Precipitation</div>
+            <div class="cloudiness">
+              <div class="details" id="details-cloud"></div>
+              <div class="text">Cloudiness</div>
             </div>
           </div>
           <div class="bottomPart">
             <div class="wind">
-              <div class="details">E / 6.2 km/h</div>
+              <div class="details" id="details-wind"></div>
               <div class="text">Wind</div>
             </div>
             <div class="humidity">
-              <div class="details">89%</div>
+              <div class="details" id="details-humidity">89%</div>
               <div class="text">Humidity</div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="weeklySection">
+      <!-- <div class="weeklySection">
         <div class="dayCard" id="one">
           <p class="bottomDay">Friday</p>
-          <img src="e440b43c64e26a82651e.png" class="bottomWeatherIcon" />
+          <img src="./images/partly-cloudy.png" class="bottomWeatherIcon" />
           <p class="bottomTemp">21°C</p>
         </div>
         <div class="dayCard" id="two">
           <p class="bottomDay">Saturday</p>
-          <img src="e440b43c64e26a82651e.png" class="bottomWeatherIcon" />
+          <img src="./images/partly-cloudy.png" class="bottomWeatherIcon" />
           <p class="bottomTemp">21°C</p>
         </div>
         <div class="dayCard" id="three">
           <p class="bottomDay">Sunday</p>
-          <img src="e440b43c64e26a82651e.png" class="bottomWeatherIcon" />
+          <img src="./images/partly-cloudy.png" class="bottomWeatherIcon" />
           <p class="bottomTemp">21°C</p>
         </div>
         <div class="dayCard" id="four">
           <p class="bottomDay">Monday</p>
-          <img src="e440b43c64e26a82651e.png" class="bottomWeatherIcon" />
+          <img src="./images/partly-cloudy.png" class="bottomWeatherIcon" />
           <p class="bottomTemp">21°C</p>
         </div>
         <div class="dayCard" id="five">
           <p class="bottomDay">Tuesday</p>
-          <img src="e440b43c64e26a82651e.png" class="bottomWeatherIcon" />
+          <img src="./images/partly-cloudy.png" class="bottomWeatherIcon" />
           <p class="bottomTemp">21°C</p>
         </div>
         <div class="dayCard" id="six">
           <p class="bottomDay">Wednesday</p>
-          <img src="e440b43c64e26a82651e.png" class="bottomWeatherIcon" />
+          <img src="./images/partly-cloudy.png" class="bottomWeatherIcon" />
           <p class="bottomTemp">21°C</p>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>
